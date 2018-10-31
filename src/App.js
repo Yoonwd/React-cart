@@ -57,15 +57,15 @@ const Inventory = [
     return (
       <CartContext.Provider>
       <div className="App">
-        <footer className="App-total-footer">
-          <h1>React-cart</h1>
-          <Button variant="contained" color="primary">
+        <h1>React-cart</h1>
+          <Button variant="contained" color="secondary">
             HI NATURE
           </Button>
-            <div>
-              <CartItem />
-              <CartTotal />
-            </div>
+        <CartItem price={`test`} />
+        <footer className="App-total-footer">
+          <div>
+            <CartTotal />
+          </div>
         </footer>
       </div>
       </CartContext.Provider>

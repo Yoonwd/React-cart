@@ -13,9 +13,11 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 const styles = theme => ({
   card: {
-    maxWidth: 1000,
+    width: '800px',
+    maxWidth: '1000px',
     display: 'flex',
     marginTop: '20px',
+    margin: '0 auto',
   },
   media: {
     // ⚠️ object-fit is not supported by IE 11.
@@ -33,6 +35,14 @@ const styles = theme => ({
   },
   title: {
     paddingRight: '20px'
+  },
+  price: {
+    display: 'flex',
+    alignItems: 'center',
+    fontSize: '20px',
+    fontWeight: 'bold',
+    marginRight: '20px',
+    marginLeft: '20px',
   }
 });
 
@@ -81,12 +91,11 @@ class CartItem extends React.Component {
             <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
               Milk <br />
             </Typography>
-            <Typography component="p">
-              건강한 소에서 얻은 우유를 저온 살균한 깔끔하고 진한 고소함
-            </Typography>
           </CardContent>
         </CardActionArea>
-
+        <Typography component="h3" className={classes.price} align="center">
+          500 {this.props.price} 
+        </Typography>
       </Card>
 
       <Card className={classes.card}>
@@ -115,12 +124,11 @@ class CartItem extends React.Component {
             <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
               Water <br />
             </Typography>
-            <Typography component="p">
-              ㈜강원심층수는 오염 물질로부터 완벽하게 차단된 철저한 방진
-            </Typography>
           </CardContent>
         </CardActionArea>
-
+        <Typography component="h3" className={classes.price} align="center">
+          800  
+        </Typography>
       </Card>
 
       <Card className={classes.card}>
@@ -149,12 +157,11 @@ class CartItem extends React.Component {
             <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
               Coffee <br />
             </Typography>
-            <Typography component="p">
-              콜드브루의 풍성한 바디감을 은은한 달콤함으로
-            </Typography>
           </CardContent>
         </CardActionArea>
-
+        <Typography component="h3" className={classes.price} align="center">
+          1000  
+        </Typography>
       </Card>
 
      
