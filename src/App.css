@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.App_total_footer {
+  position: absolute;
+  width: 800px;
+  bottom: 10px;
+  border: 3px solid green;
+}
