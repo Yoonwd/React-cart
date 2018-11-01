@@ -94,7 +94,7 @@ class CartItem extends React.Component {
           </CardContent>
         </CardActionArea>
         <Typography component="h3" className={classes.price} align="center">
-          500 {this.props.price} 
+          {this.props.price} 
         </Typography>
       </Card>
 

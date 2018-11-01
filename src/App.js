@@ -61,7 +61,7 @@ const Inventory = [
           <Button variant="contained" color="secondary">
             HI NATURE
           </Button>
-        <CartItem price={`test`} />
+        <CartItem price={Inventory.map(item => (<div>{item.title}</div>))} />
         <footer className="App-total-footer">
           <div>
             <CartTotal />
