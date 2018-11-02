@@ -61,7 +61,10 @@ const Inventory = [
           <Button variant="contained" color="secondary">
             HI NATURE
           </Button>
-        <CartItem price={Inventory.map(item => (<div>{item.title}</div>))} />
+        <CartItem 
+          // Inventory.products.price를 가져오는 방법은 무엇인가??
+          price={Inventory.map(item => (<div>{item.title}</div>))} 
+        />
         <footer className="App-total-footer">
           <div>
             <CartTotal />
@@ -74,3 +77,11 @@ const Inventory = [
 }
 
 export default App;
+
+// 아이템리스트에서 카트에 담기 빼기 구현 어려움.
+// 일단 카트에 담겨진 상태에서 선택, 전체선택, 합계 구현해 보기
+
+// 필요한 데이터의 흐름 파악하기
+// 필요한 이벤트 함수들을 확실히 파악하기
+
+// 배열다루는 법을 더 연습할 것.(es6 문법포함)
