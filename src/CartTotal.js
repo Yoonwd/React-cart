@@ -26,9 +26,11 @@ class CartTotal extends Component {
     this.state = {
       total: 0
     };
-    //바인드를 꼭 해줘야 하는 경우는 언제인가??  
+//바인드를 꼭 해줘야 하는 경우는 언제인가??  
     this.calculateTotal = this.calculateTotal.bind(this);
   }
+
+// CartItem 컴포넌트의 state가 트루일 때, 각 아이템의 price의 값을 total로 보내주는 함수  - consumer 가 있어야 하는 자리일 것이다. 
 
 
 // 합계를 계산하는 함수
